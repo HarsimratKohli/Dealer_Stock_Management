@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.stockmanagement.Add_Product">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="367dp"
+        android:layout_height="495dp"
+        android:layout_margin="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <EditText
+            android:id="@+id/txt_ProductF"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/spinner_companies"
+            android:hint="Enter Product Type"
+            android:inputType="text"
+            android:textAppearance="?android:attr/textAppearance"
+            android:textColor="@android:color/black" />
+
+        <EditText
+            android:id="@+id/txt_CostF"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/txt_QauntityF"
+            android:layout_marginTop="18dp"
+            android:hint="Enter Product Price"
+            android:inputType="text"
+            android:textAppearance="?android:attr/textAppearance"
+            android:textColor="@android:color/black" />
+
+        <EditText
+            android:id="@+id/txt_QauntityF"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/txt_ProductF"
+            android:layout_marginTop="21dp"
+            android:hint="Enter Product Quantity"
+            android:inputType="text"
+            android:lines="2"
+            android:maxLines="2"
+            android:textAppearance="?android:attr/textAppearance"
+            android:textColor="@android:color/black" />
+
+        <EditText
+            android:id="@+id/txt_commissionF"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/txt_CostF"
+            android:layout_marginTop="13dp"
+            android:hint="Enter Product Commission"
+            android:inputType="text"
+            android:textAppearance="?android:attr/textAppearance"
+            android:textColor="@android:color/black" />
+
+
+        <Button
+            android:id="@+id/btn_add"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/txt_commissionF"
+            android:layout_marginTop="60dp"
+            android:gravity="center"
+            android:paddingBottom="2dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:paddingTop="2dp"
+            android:text="@string/add"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <Spinner
+            android:id="@+id/spinner_companies"
+            android:layout_width="351dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:animateLayoutChanges="true"
+            android:prompt="@string/select_a_company"
+            android:spinnerMode="dropdown"
+            tools:layout_editor_absoluteX="9dp"
+            tools:layout_editor_absoluteY="243dp" />
+
+    </RelativeLayout>
+
+
+
+</android.support.constraint.ConstraintLayout>
